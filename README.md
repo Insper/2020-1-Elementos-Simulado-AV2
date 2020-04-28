@@ -1,37 +1,30 @@
-# 2020-2 AV1
+# 2020-2 AV2
 
 > SIMULADO
+
+Conteúdo:
+   
+- Circuitos Síncronos
+- Arquitetura de Computadores (Z01)
+- Assembly
 
 | Pontos HW | Pontos SW |
 | -------   | ------    |
 | 25        | 45        |
 
-Avaliação 2 de Elementos de Sistemas.  
+Avaliação 2 de Elementos de Sistemas. Duas partes: Teoria e Prática, você deve gerenciar o tempo disponível como quiser.
 
 - **Trabalhar sozinho**
-- **100 minutos**
+- **120 minutos**
 - **Ficar conectado no canal geral (para ouvir instruções)**
 
-## Começando
+### Começando
 
 Você deve:
 
 1. clonar o seu repositório (e trabalhar nele)
 1. editar o arquivo `ALUNO.json`
 1. não esqueça de dar `commit` e `push`
-
-
-## Questões
-
-As questões de hardware (`.vhd`) devem ser implementadas nos arquivos localizados na pasta `src/rtl`, as questões de software (`nasm`) devem ser implementadas nos arquivos localizados em `src/nasm`. Para executar o teste tanto de HW quanto de SW é necessário executar o script:
-
-```
-./testeAV2.py
-```
-
-> Vocês devem editar o arquivo `tests/config.txt` para inserir o módulo no teste.
-
-**LEMBRE DE REALIZAR UM COMMIT (A CADA QUESTÃO) E DAR PUSH AO FINALIZAR**
 
 
 ## PARTE 1 - Teoria
@@ -58,6 +51,16 @@ Questões teóricas de:
 | Pontos HW | Pontos SW |
 | -------   | ------    |
 | 0         | 35        |
+
+As questões de hardware (`.vhd`) devem ser implementadas nos arquivos localizados na pasta `src/rtl`, as questões de software (`nasm`) devem ser implementadas nos arquivos localizados em `src/nasm`. Para executar o teste tanto de HW quanto de SW é necessário executar o script:
+
+```
+./testeAV2.py
+```
+
+> Vocês devem editar o arquivo `tests/config.txt` para inserir o módulo no teste.
+
+**LEMBRE DE REALIZAR UM COMMIT (A CADA QUESTÃO) E DAR PUSH AO FINALIZAR**
 
 ### 1. (10 SW) pseudo
 
