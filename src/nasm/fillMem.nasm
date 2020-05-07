@@ -17,3 +17,26 @@
 ; RAM[6]:  0  | RAM[6]:  3 -
 ; RAM[7]:  0  | RAM[7]:  0
 
+inicio:
+leaw $counter, %A
+movw (%A), %D
+leaw $2, %A
+subw (%A), %D, %D
+leaw $fim, %A
+je %D
+nop
+leaw $counter, %A
+movw (%A), %D
+movw %D, (%A)
+leaw $3, %A 
+addw %D, %A, %A
+movw %D, (%A)
+leaw $counter, %A
+incw %D
+movw %D, (%A)
+leaw $inicio, %A
+jmp
+nop
+fim:
+nop
+

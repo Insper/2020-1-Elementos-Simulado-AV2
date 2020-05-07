@@ -8,4 +8,29 @@
 ;        RAM5[6] = -2
 ;
 ;---------------------------------------------------------
-
+movw $1, %A
+movw (%A), %D
+subw %D, %A, %D
+leaw $else, %A
+jne %D
+nop
+leaw $2, %A
+movw (%A), %D
+leaw $3, %A
+subw %D, %A, %D
+leaw $else, %A
+jne %D
+nop
+leaw $5, %A
+movw 1, (%A)
+leaw $end
+jmp
+nop
+else:
+leaw $2, %A
+movw %A, %D
+negw %D
+leaw $6, %A
+movw %D, (%A)
+end:
+nop
